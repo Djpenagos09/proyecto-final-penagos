@@ -1,0 +1,61 @@
+/* reset */
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales -barra- */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: $color-texto;
+    color: $color-principal;
+}
+
+header {
+    display: flex;
+    @include align-items;
+    padding: 20px;
+    background-color: $color-barra;
+    justify-content: center;
+}
+
+header div a h1 {
+    display: flex;
+    background-color: $color-barra;
+    color: $color-texto;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.barra {
+    margin: 10px 10px 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    @include align-items;
+}
+
+.titulo img {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+h1 {
+    color: $color-texto;
+    font-size: 2em;
+    letter-spacing: 10px;
+    justify-content: center;
+}
+h2 {
+    font-size: 2.5em;
+    color: $color-principal;
+    margin:30px;   
+    @include align-content; 
+    
+}

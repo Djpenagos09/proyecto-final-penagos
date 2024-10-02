@@ -1,0 +1,207 @@
+//import de variables
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+
+
+
+.histo {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 20px;
+}
+
+.historia h2{
+    font-size: 2.5em;
+    color: $color-principal;
+    margin:30px;    
+}
+.escenas h3 {
+    font-size: 2.5em;
+    color: $color-principal;
+    margin:30px;
+    @include align-content; 
+}
+.pahisto {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+}
+
+.name-video {
+    @include flex;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+h2 .video-uno, .video-dos {
+    object-fit: cover;
+}
+
+/* main personajes */
+.column .column2 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content h2, .column h2{
+    font-size: 2.5em;
+    color: $color-principal;
+    margin:30px;   
+    align-content: center;  
+    
+}
+
+.content {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 20px;
+}
+.personaje{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.personaje img{
+    width: 302px;
+    height: 230px;
+    object-fit: cover;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.personaje, .dato {
+    flex-direction: column;
+    align-items: center;
+}
+
+.dato{
+    padding-top: 10px;
+    @include align-items;
+    @include align-content;
+}
+
+.dato .card img{
+    width: 330px;
+    height: 330px;
+    }
+
+.maqui iframe {
+    object-fit: cover;
+}
+
+.text-content {
+    max-width: 300px;
+}
+
+.text {
+    font-size: 20px;
+    color: $color-principal;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.rodaje {
+    padding-top: 10px;
+    margin: 20px 2px 20px 20px
+}
+
+.video-uno, .video-dos img {
+    object-fit: cover;
+}
+
+
+/* main simbologia */
+.datos-curiosos .parra {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.simbologia .parra{
+    font-size: 22px;
+    line-height: 1.6;
+}
+/* main ver peli */
+.video-section {
+    text-align: center;
+    color: $color-texto;
+    padding: 50px 60px;
+    font-size: 2em;
+} 
+
+.video-section h2{
+    font-size: 1em;
+    color: $color-principal;
+    margin: 30px;
+    align-content: center;
+}
+.video-thumbnail {
+    position: relative;
+    width: 100%; 
+    padding-bottom: 56.25%; 
+    height: 50%; 
+    overflow: hidden; 
+}
+
+.video-thumbnail iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+}
+
+.awards {
+    background-color: $color-barra; 
+    padding: 50px 20px;
+}
+.gala div {
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+.gala h4{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.awards h3 {
+    text-align: center;
+    font-size: 50px;
+    color: #D4AF37;
+    margin-bottom: 30px;
+}
+
+
+
+footer {
+    @include footer;
+}
+footer p {
+    margin: 0;
+}
+
+
+

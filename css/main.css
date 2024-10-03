@@ -263,4 +263,38 @@ footer p {
   margin: 0;
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: black;
+    color: whitesmoke;
+  }
+  main {
+    gap: 20px;
+    margin-top: 20px;
+    padding: 100px;
+  }
+  .text {
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .content h2, .column h2 {
+    font-size: 50px;
+    color: whitesmoke;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 20px;
+    justify-items: center;
+  }
+  .dato .card img {
+    width: 800px;
+    height: 800px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

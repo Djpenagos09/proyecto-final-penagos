@@ -7,19 +7,17 @@
 
 
 .histo {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    padding: 20px;
+    @include grid
 }
 
 .historia h2{
     font-size: 2.5em;
-    color: $color-principal;
+    color: $color-texto;
     margin:30px;    
 }
 .escenas h3 {
     font-size: 2.5em;
-    color: $color-principal;
+    color: $color-texto;
     margin:30px;
     @include align-content; 
 }
@@ -44,23 +42,19 @@ h2 .video-uno, .video-dos {
 
 /* main personajes */
 .column .column2 {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    padding: 20px;
+    @include grid;
 }
 
 .content h2, .column h2{
     font-size: 2.5em;
-    color: $color-principal;
+    color: $color-texto;
     margin:30px;   
-    align-content: center;  
+    @include align-content;  
     
 }
 
 .content {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    padding: 20px;
+    @include grid
 }
 .personaje{
     display: flex;
@@ -104,7 +98,7 @@ h2 .video-uno, .video-dos {
 
 .text {
     font-size: 20px;
-    color: $color-principal;
+    color: $color-texto;
     margin-bottom: 10px;
     justify-content: center;
 }
@@ -152,9 +146,9 @@ h2 .video-uno, .video-dos {
 
 .video-section h2{
     font-size: 1em;
-    color: $color-principal;
+    color: $color-texto;
     margin: 30px;
-    align-content: center;
+    @include align-content;
 }
 .video-thumbnail {
     position: relative;
@@ -184,7 +178,7 @@ h2 .video-uno, .video-dos {
 .gala h4{
     display: flex;
     margin-top: 10px;
-    align-items: center;
+    @include align-items;
 }
 
 .awards h3 {
@@ -204,10 +198,9 @@ footer p {
 }
 /* MEDIA QUERIES */
 @media screen and (min-width: 600px ) {
-    @media screen and (min-width: 600px) {
         body{
-            background-color: black;
-            color: whitesmoke;
+            background-color: $color-principal;
+            color: $color-texto;
         }
     
         main {
@@ -218,18 +211,8 @@ footer p {
     
         .historia h2, .escenas h3{
             font-size: 2.5em;
-            color: whitesmoke;
+            color: $color-texto;
             margin:30px;    
-        }
-        
-        .icono-hamburguesa {
-            position: fixed;
-            top: 25px;
-            right: 50px; 
-            font-size: 30px;
-            cursor: pointer;
-            z-index: 1000;
-            margin-top: -10px;
         }
     
         .histo img {
@@ -276,16 +259,16 @@ footer p {
             padding-top: 25px;
         }
         .video-section h2{
-            color: whitesmoke;
+            color: $color-texto;
         }
     
         .works-grid {
             grid-template-columns: repeat(2, 1fr); 
         }
     
-       .works-section {
-        padding: 20px;
-        text-align: center;
+        .works-section {
+            padding: 20px;
+            text-align: center;
         }
     
         .works-section h2 {
@@ -326,7 +309,7 @@ footer p {
         }
     
     }    
-}    
+    
 
 
 

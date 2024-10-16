@@ -11,18 +11,16 @@
 @mixin align-content {
     align-content: center;
 }
-@mixin menu-burger {
-    position: fixed;
-    top: 5px;
-    right: 10px; 
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1000;
-    margin-top: -10px;
-} 
+
 @mixin footer {
     text-align: center;
-    background-color: black;
+    background-color: $color-principal;
     padding: 10px 0;
-    color: whitesmoke;
+    color: $color-texto;
+}
+
+@mixin grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 20px;
 }

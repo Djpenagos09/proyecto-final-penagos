@@ -11,8 +11,8 @@
 /* estilos generales -barra- */
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: $color-texto;
-    color: $color-principal;
+    background-color: $color-principal;
+    color: $color-texto;
 }
 
 header {
@@ -54,7 +54,7 @@ h1 {
 }
 h2 {
     font-size: 2.5em;
-    color: $color-principal;
+    color: $color-texto;
     margin:30px;   
     @include align-content; 
     
